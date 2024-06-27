@@ -64,45 +64,16 @@
             <div class="fact-for-us">
                 <p class="fact-for-us-text1">[Факты о нас...]</p>
                 <div class="fact-for-us-text2">
-                    <div class="item">
-                        <p>Реализуем проекты в</p>
-                    </div>
-                    <div class="item">
-                        <p1>7</p1>
-                    </div>
-                    <div class="item">
-                        <p> странах мира на протяжении </p>
-                    </div>
-                    <div class="item">
-                        <p1>16</p1>
-                    </div>
-                    <div class="item">
-                        <p>лет.</p>
-                    </div>
+                    <p>Реализуем проекты в <span class="dynamicText">7</span>
+                         странах мира на протяжении <span class="dynamicText">16</span> лет.</p>
                 </div>
                 <hr class="item-line1"></hr>
                 <div class="fact-for-us-text3">
-                    <div class="item">
-                        <p>Чуть не начали </p>
-                    </div>
-                    <div class="item">
-                        <p1>3</p1>
-                    </div>
-                    <div class="item">
-                        <p> мировых войны. </p>
-                    </div>
+                    <p>Чуть не начали <span class="dynamicText">3</span> мировых войны.</p>
                 </div>
                 <hr class="item-line1"></hr>
                 <div class="fact-for-us-text4">
-                    <div class="item">
-                        <p>Нами было построено  </p>
-                    </div>
-                    <div class="item">
-                        <p1>4</p1>
-                    </div>
-                    <div class="item">
-                        <p> противоядерных бункера. </p>
-                    </div>
+                    <p>Нами было построено <span class="dynamicText">4</span> противоядерных бункера.</p>
                 </div>
                 <hr class="item-line1"></hr>
             </div>
@@ -111,5 +82,11 @@
             <hr class="title-line" style="margin-top: -11px;"></hr>
             <p class="we-make-title">[Мы делаем...]</p>
         </div>
+        <script>
+            var elements = document.querySelectorAll('.dynamicText');
+            elements.forEach(function(element) {
+            element.classList.add('highlight');
+        });
+        </script>
     </body>
 </html>
