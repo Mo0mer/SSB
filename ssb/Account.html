@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аккаунт пользователя</title>
+    <link rel="stylesheet" href="account_style.css">
+    <script src="account_script.js" defer></script>
+</head>
+<body>
+    <div class="account-container">
+        <div class="main-section">
+            <img src="rewiews4.png" alt="Аватар пользователя" class="avatar" id="avatar">
+            <div class="user-info">
+                <p style="margin-top: 50px;"><strong>Имя:</strong> <span id="username">Иван Иванов</span></p>
+                <p><strong>Пол:</strong> <span id="gender">Мужской</span></p>
+                <p><strong>Возраст:</strong> <span id="age">30</span></p>
+            </div>
+        </div>
+        <div class="control-panel">
+            <button id="toggleDetailsBtn"><img src="details_icon.svg" alt="Details"></button>
+            <button id="returnHomeBtn"><img src="home_icon.svg" alt="Home"></button>
+            <button id="deleteAccountBtn"><img src="delete_icon.svg" alt="Delete"></button>
+        </div>
+        <div id="detailsSection" class="details-section" style="display: none;">
+            <p><strong>Email:</strong> <span id="email"> ivan@example.com</span> </p>
+            <button class="editBtn" data-field="email">Изменить</button>
+            <p><strong>Телефон:</strong> <span id="phone"> +7 (123) 456-78-90</span></p>
+            <button class="editBtn" data-field="phone">Изменить</button>
+            <p><strong>Адрес:</strong> <span id="address"> Новосибирск, ул. Ленина, 10</span></p>
+            <button class="editBtn" data-field="address">Изменить</button>
+            <p><strong>Пароль:</strong> <span id="password">1234password</span></p>
+            <button class="editBtn" data-field="password">Изменить</button>
+        </div>
+        <div id="editSection" class="edit-section" style="display: none;"></div>
+    </div>
+    <div id="statusMessage" class="message" style="display: none;"></div>
+</body>
+</html>

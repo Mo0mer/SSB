@@ -36,7 +36,7 @@
                             Главная
                         </h3>
                         <h3 id="account-link" class="account-link"
-                            onclick="">
+                            onclick="goToLogIn()">
                             Аккаунт
                         </h3>
                         <h3 id="catalog-link" class="catalog-link"
@@ -47,21 +47,21 @@
                 </div>
                 <div class="small-info">
                     <div class="small-info1">
-                        <h5 >Факты о нас...</h5>
+                        <h5><a href="#fact-for-us" class="text-link">Факты о нас...</a></h5>
                     </div>
                     <div class="small-info2">
-                        <h5 >Мы делаем...</h5>
+                        <h5><a href="#we-make" class="text-link">Мы делаем...</a></h5>
                     </div>
                     <div class="small-info3">
-                        <h5 >Отзывы...</h5>
+                        <h5><a href="#reviews" class="text-link">Отзывы...</a></h5>
                     </div>
                     <div class="small-info4">
-                        <h5 >Контакты...</h5>
+                        <h5><a href="#contacts" class="text-link">Контакты...</a></h5>
                     </div>
                 </div>
             </div>
             <hr class="title-line"></hr>
-            <div class="fact-for-us">
+            <div class="fact-for-us" id="fact-for-us">
                 <p class="fact-for-us-text1">[Факты о нас...]</p>
                 <div class="fact-for-us-text2">
                     <p>Реализуем проекты в <span class="dynamicText">7</span>
@@ -78,9 +78,135 @@
                 <hr class="item-line1"></hr>
             </div>
         </header>
-        <div class="we-make">
+        <div class="we-make" id="we-make">
             <hr class="title-line" style="margin-top: -11px;"></hr>
             <p class="we-make-title">[Мы делаем...]</p>
+            <table>
+                <tr>
+                    <td>
+                        <div class="table-title-text">
+                            <p>Строительство с нуля</p>
+                        </div>
+                        <div class="table-text">
+                            <p>Вы даёте нам деньги. Мы строим.</p> 
+                            <p>Одноэтажный дом или гномью пещеру,
+                                а может таверну?</p>
+                        </div>
+                        <div class="button-container-td">
+                            <h4>Подробнее...</h4>
+                        </div>
+                    </td>
+                    <td>
+                        <img src="table_pic1.png">
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="table_pic2.png"></td>
+                    <td>
+                        <div class="table-title-text">
+                            <p>Ремонт и отделка</p>
+                        </div>
+                        <div class="table-text">
+                            <p>Производим ремонт и отделочные работы любой сложности.</p> 
+                            <p>Наши эльфы справятся со всем.</p>
+                        </div>
+                        <div class="button-container-td"> 
+                            <h4>Подробнее...</h4>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="table-title-text">
+                            <p>Ландшафтный дизайн</p>
+                        </div>
+                        <div class="table-text">
+                            <p>Наши дизайнеры смогут воплотить любую вашу фантазию в жизнь.</p>
+                        </div>
+                        <div class="button-container-td">
+                            <h4>Подробнее...</h4>
+                        </div>
+                    </td>
+                    <td><img src="table_pic3.png"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="reviews" id="reviews">
+            <hr class="title-line" style="margin-top: -11px;"></hr>
+            <p class="we-make-title">[Отзывы...]</p>
+            <div class="review-card">
+                <div class="review-header">
+                    <img src="rewiews1.png" alt="Фото клиента">
+                    <div class="name">Фирентий Гибкий Лист</div>
+                    <div class="date">12 мая 2009</div>
+                </div>
+                <div class="review-rating">
+                    <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                </div>
+                <div class="review-body">
+                    <p>После постройки дерева старосты, то жёйска покосилось. Но теперь у нас есть пизанское дерево.</p>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-header">
+                    <img src="rewiews2.png" alt="Фото клиента">
+                    <div class="name">Гном Гринни</div>
+                    <div class="date">14 июня 2013</div>
+                </div>
+                <div class="review-rating">
+                    <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                </div>
+                <div class="review-body">
+                    <p>Изначально планировалось простое расширение территории пещеры, но теперь у нас есть целый мини лабиринт с мини минетаврами. Мы в шоке. Иерархия сломана. Гномы покорят мир.</p>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-header">
+                    <img src="rewiews3.png" alt="Фото клиента">
+                    <div class="name">Дракон Фламмус</div>
+                    <div class="date">1 декабря 2014</div>
+                </div>
+                <div class="review-rating">
+                    <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                </div>
+                <div class="review-body">
+                    <p>Ваши люди и в огне не горят и в воде не тонут, я проверил.</p>
+                    <p>Заделали мне логово по всем драконьим стандартам - высоченные потолки, огнеупорные стены, огромная зона для сокровищ.</p>
+                    <p>А какая нереальная зона для жарки людей.</p>
+                </div>
+            </div>
+            <div class="review-card" style="margin-bottom: 20px;">
+                <div class="review-header">
+                    <img src="rewiews4.png" alt="Фото клиента">
+                    <div class="name">Король Демонов Балтазар</div>
+                    <div class="date">24 июня 2023</div>
+                </div>
+                <div class="review-rating">
+                    <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                </div>
+                <div class="review-body">
+                    <p>Заказал перестройку своего замка, результат крайне порадовал.</p>
+                    <p>Невероятно прочные стены. Люди нас уже 2 недели штурмууют, а замку все равно.</p>
+                    <p>Умопомрачительное подземелье, я сам там уже 2 раза потерялся.</p>
+                    <p>P.S. Моя демоническая армия тоже благодарит за просторные тренировочные залы и отличную акустику для зловещего смеха. Теперь наши собрания стали еще более зловещими.</p>
+                </div>
+            </div>
+        </div>
+        <div class="contacts" id="contacts">
+            <hr class="title-line" style="margin-top: -11px;"></hr>
+            <p name="link-contacts" class="we-make-title">[Контакты...]</p>
+            <div class="contact-info">
+                <h2>Контактная информация</h2>
+                <p><strong>Адрес:</strong> ул. Ленина, д. 45, г. Новосибирск, Россия</p>
+                <p><strong>Телефон:</strong> +7 (383) 123-45-67</p>
+                <p><strong>Email:</strong> info@ssb.ru</p>
+                <p><strong>Часы работы:</strong> Пн-Пт: 9:00 - 18:00</p>
+            </div>
+
+            <div class="map">
+                <h2>Наше местоположение</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2291.0150915821385!2d82.90137031582647!3d55.031698980631955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42dfcea925bcec05%3A0x7287c3b4b695b2cb!2sLenina%20St%2C%2045%2C%20Novosibirsk%2C%20Novosibirskaya%20oblast%2C%20Russia%2C%20630099!5e0!3m2!1sen!2sru!4v1621234567890!5m2!1sen!2sru" allowfullscreen="" loading="lazy"></iframe>
+            </div>
         </div>
         <script>
             var elements = document.querySelectorAll('.dynamicText');
@@ -88,5 +214,6 @@
             element.classList.add('highlight');
         });
         </script>
+        <button class="floating-button" onclick="returnHome()">+</button>
     </body>
 </html>

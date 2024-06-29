@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    background-color: #232323;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.account-container {
+    width: 400px;
+    height: 190px;
+    margin-top: 150px;
+    padding: 20px;
+    background-color: #EAEAEA;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px rgba(229, 56, 36, 0.4);
+    position: relative;
+}
+
+.main-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    margin-left: 30px;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.user-info p {
+    margin: 5px 0;
+}
+
+.control-panel {
+    position: absolute;
+    top: 0px;
+    left: -80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EAEAEA;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px rgba(229, 56, 36, 0.4);
+    padding: 10px;
+
+}
+
+.control-panel button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 10px 0;
+    background-color: #E53824;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.control-panel button img {
+    width: 24px;
+    height: 24px;
+}
+
+.control-panel button:hover {
+    background-color: #B52514;
+}
+
+.avatar-input {
+    margin-left: 10px;
+}
+
+.details-section {
+    margin-left: -20px;
+    margin-top: 75px;
+    width: 400px;
+    padding: 20px;
+    background-color: #EAEAEA;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px rgba(229, 56, 36, 0.4);
+    position: relative;
+}
+
+.details-section p {
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.edit-section {
+    margin-top: 20px;
+    margin-left: -20px;
+    width: 420px;
+    background-color: #EAEAEA;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px rgba(229, 56, 36, 0.4);
+    position: relative;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.edit-section h3 {
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+.edit-section input {
+    width: 400px;
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px;
+    background-color: #E53824;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c0392b;
+}
+
+.details-section button,
+.edit-section button {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    background-color: #E53824;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.details-section button:hover,
+.edit-section button:hover {
+    background-color: #B52514;
+}

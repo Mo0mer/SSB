@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ППП-магазин строительных услуг</title>
+    <link rel="stylesheet" href="LogIn_style.css">
+    <script src="LogIn.js"></script>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Вход в аккаунт</h2>
+        <div class="create-account">
+            <p>Еще нет аккаунта?</p>
+            <a href="SignIn.html">Создать аккаунт</a>
+        </div>
+        <form id="loginForm">
+            <label for="loginEmail">Email:</label>
+            <input type="email" id="loginEmail" name="loginEmail" required>
+
+            <label for="loginPassword">Пароль:</label>
+            <input type="password" id="loginPassword" name="loginPassword" required>
+
+            <button type="submit" onclick="check_date()">Войти</button>
+        </form>
+    </div>
+    <div class="message-container">
+        <div id="statusMessage" class="message"></div>
+    </div>
+</body>
+</html>
