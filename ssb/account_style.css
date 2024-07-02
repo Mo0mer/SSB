@@ -5,6 +5,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 .account-container {
@@ -149,5 +151,26 @@ button:hover {
 
 .details-section button:hover,
 .edit-section button:hover {
+    background-color: #B52514;
+}
+
+
+body::-webkit-scrollbar {
+    width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #EAEAEA;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #E53824;
+}
+
+body::-webkit-scrollbar-thumb:vertical {
+    min-height: 30px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
     background-color: #B52514;
 }
