@@ -1,7 +1,68 @@
-<!DOCTYPE html>>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <style></style>
-    <script></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#construction">Строительство с нуля</a></li>
+                <li><a href="#repair">Ремонт и отделка</a></li>
+                <li><a href="#landscape">Ландшафтный дизайн</a></li>
+            </ul>
+        </nav>
+        <button class="cart-button">Корзина</button>
+    </header>
+
+    <main>
+        <section id="construction" class="service-container">
+            <div class="service">
+                <img src="construction.jpg" alt="Строительство с нуля">
+                <div class="info">Краткая информация о строительстве с нуля</div>
+                <video src="construction.mp4" class="hidden"></video>
+                <button class="order-button hidden">Перейти к оформлению заказа</button>
+            </div>
+        </section>
+        <section id="repair" class="service-container">
+            <div class="service">
+                <img src="repair.jpg" alt="Ремонт и отделка">
+                <div class="info">Краткая информация о ремонте и отделке</div>
+                <video src="repair.mp4" class="hidden"></video>
+                <button class="order-button hidden">Перейти к оформлению заказа</button>
+            </div>
+        </section>
+        <section id="landscape" class="service-container">
+            <div class="service">
+                <img src="landscape.jpg" alt="Ландшафтный дизайн">
+                <div class="info">Краткая информация о ландшафтном дизайне</div>
+                <video src="landscape.mp4" class="hidden"></video>
+                <button class="order-button hidden">Перейти к оформлению заказа</button>
+            </div>
+        </section>
+
+        <section class="scroll-section">
+            <h2>Оборудование</h2>
+            <div class="scroll-container">
+                <div class="item">Оборудование 1</div>
+                <div class="item">Оборудование 2</div>
+                <div class="item">Оборудование 3</div>
+            </div>
+        </section>
+
+        <section class="scroll-section">
+            <h2>Материалы</h2>
+            <div class="scroll-container">
+                <div class="item">Материал 1</div>
+                <div class="item">Материал 2</div>
+                <div class="item">Материал 3</div>
+            </div>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
 </body>
+</html>

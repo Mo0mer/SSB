@@ -11,7 +11,7 @@
         <header> 
             <div class="header-house">
                 <img src="header_house.png">
-                <div class="title-text">
+                <div class="title-text" ondblclick="toggleAudio()">
                     <h1 class="title-text1">
                         Строительная компания 
                     </h1>
@@ -26,8 +26,9 @@
                         Любой каприз за ваши деньги.
                     </h3>
                 </div>
+                <audio id="audio" src="title_sub.mp3"></audio>
                 <div class="info">
-                    <div class="icon">
+                    <div class="icon" ondblclick="goToVideoPage()">
                         <img src="icon.svg">
                     </div>
                     <div class="info-text">
@@ -96,12 +97,14 @@
                             <h4>Подробнее...</h4>
                         </div>
                     </td>
-                    <td>
-                        <img src="table_pic1.png">
+                    <td class="video-container">
+                        <video src="build.mp4" autoplay loop muted></video>
                     </td>
                 </tr>
                 <tr>
-                    <td><img src="table_pic2.png"></td>
+                    <td class="video-container">
+                        <video src="remont.mp4" autoplay loop muted></video>
+                    </td>
                     <td>
                         <div class="table-title-text">
                             <p>Ремонт и отделка</p>
@@ -127,7 +130,9 @@
                             <h4>Подробнее...</h4>
                         </div>
                     </td>
-                    <td><img src="table_pic3.png"></td>
+                    <td class="video-container">
+                        <video src="design.mp4" autoplay loop muted></video>
+                    </td>
                 </tr>
             </table>
         </div>
